@@ -54,7 +54,8 @@ center{
 }
 
 .note{
- color:red;
+ color:blue;
+ font-size: 16px;
 }
  
 .valid{
@@ -75,6 +76,7 @@ input[type=button]{
  background: linear-gradient(#ffbc00 5%, #ffdd7f 100%);
  border: 1px solid #e5a900;
  color: #4E4D4B;
+ text-align: center;
  font-weight: bold;
  cursor: pointer;
  width: 100%;
@@ -95,6 +97,7 @@ form{
 
 input[type=button]:hover{
  background: linear-gradient(#ffdd7f 5%, #ffbc00 100%);
+ font-size:20px;
 }
 
 .fugo{
