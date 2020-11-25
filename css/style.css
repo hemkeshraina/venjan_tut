@@ -91,7 +91,7 @@ input[type=button]:hover{
  float:right;
 }
 body{
-	background-color: rgb(90, 100, 85);
+	background-color: #231F20;
 	color: white;
 	font-size: 87.5%; 
 	/*Font Size is 14 */
