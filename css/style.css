@@ -437,7 +437,6 @@ img{
 }
 .buttonR2:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-<<<<<<< HEAD
 }
 
 /* register yourself*/
@@ -603,6 +602,4 @@ input[type=submit]:hover {
   .footer-distributed .footer-left p.footer-links {
     line-height: 1.8;
   }
-=======
->>>>>>> 681d9f39e5e43aa103bdf9876b4ea3dd07735fa9
 }
