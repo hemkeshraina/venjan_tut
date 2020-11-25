@@ -313,8 +313,9 @@ margin-bottom: 2%;
 	color: #fff;
 	padding: 2px;
 	height: 40px;
-	text-align: center;
+	text-align: left;
 }
+
 #search{
 	float: right;
 }
