@@ -286,6 +286,27 @@ margin-left: 3%;
 padding: 2% 3%;
 margin-bottom: 2%;
 }
+
+
+.btn-outline-reg {
+	display: inline-block;
+	padding: 1.1875rem 2.125rem 1.1875rem 2.125rem;
+	border: 0.125rem solid #00bfd8;
+	border-radius: 2rem;
+	background-color: transparent;
+	color: #00bfd8;
+	font: 700 0.75rem/0 "Raleway", sans-serif;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.btn-outline-reg:hover {
+	background-color: #00bfd8;
+	color: #fff;
+	text-decoration: none;
+}
+
+
 .team-sidebar{
   width: 21%;
   float: left;
