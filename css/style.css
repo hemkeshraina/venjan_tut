@@ -647,6 +647,8 @@ margin-bottom: 2%;
 @media (max-width: 640px) {
 #search{    
 	width: 50%;
+	margin-top:10px;
+		
 }
   }
   
@@ -663,6 +665,7 @@ margin-bottom: 2%;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
     padding: 10px 40px 12px 40px;
+	
 }
 .post-info{
 	font-style: italic;
@@ -839,6 +842,13 @@ input[type=submit] {
   cursor: pointer;
 }
 
+@media screen and (max-width: 640px) {
+	#logotop{
+			margin-top:10px;
+	}
+}
+
+
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #45a049;
@@ -858,6 +868,7 @@ input[type=submit]:hover {
   color: #8f9296;
   font-size: 14px;
   margin: 0;
+  text-align:left;
 }
 /* Footer links */
 
@@ -879,7 +890,6 @@ input[type=submit]:hover {
 }
 
 .footer-distributed .footer-links a:before {
-  content: "·";
   font-size: 20px;
   left: 0;
   color: #fff;
@@ -934,6 +944,7 @@ input[type=submit]:hover {
     line-height: 1.8;
   }
   
+
 }
 /*navbar*/
 .topnav {
@@ -1018,13 +1029,24 @@ input[type=submit]:hover {
 	}
   }
   
+  @media (max-width: 600px) {
+	.topnav{ 
+		position:relative;
+		margin-top:10px;
+		
+	}
+	
+	}
   @media screen and (max-width: 640px) {
-	.topnav.responsive {position: relative;}
+	/*.topnav.responsive {position: relative;} */
 	.topnav.responsive .icon {
 	  position: absolute;
 	  right: 0;
 	  top: 0;
 	}
+	
+
+	
 	.topnav.responsive a {
 	  float: none;
 	  display: block;
@@ -1126,3 +1148,13 @@ table th {
     border-bottom: 0;
   }
 }
+
+
+
+@media  screen and (max-width: 640px) {
+	.pbtn{
+		display:block;
+		margin-top:20px;
+	}
+}
+

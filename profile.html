@@ -14,7 +14,7 @@
 </head>
 <body class="body">
 <header class="mainheader">
-	<img src="images/logo.png">
+	<img id="logotop" src="images/logo.png">
 	<content id="search">
 		<form>
   <input type="text" name="search" placeholder="Search anything..." onclick="window.location.href='search.html'">
@@ -80,9 +80,10 @@
   </tbody>
 </table>
 <br>
-<input type="button" style="width:150px;float:left; !important;" value="Subject Notes">
 
-<input type="button" style="width:150px;float:right; !important;" value="Subject Videos">
+<input  class="pbtn" type="button" style="width:150px;" value="Subject Notes">
+                                                      
+<input  class="pbtn" type="button" style="width:150px;" value="Subject Videos">
 
 <br>
 <br>
@@ -131,14 +132,10 @@
 			<div class="footer-left">
 
 				<p class="footer-links">
-					<a class="link-1" href="#">Terms and Conditions</a>
-
-					<a href="#">Privacy Policy</a>
-
-					<a href="#">Job Opportunities</a>
+				<a href="#"> Job Opportunities</a>
 				</p>
 
-				<p>Venjan Tutorials&copy; 2020<br><br>I am very passionate about sharing my knowledge to the students for free!</p>
+				<p id="cpy">Venjan Tutorials&copy; 2020<br><br>I am very passionate about sharing my knowledge to the students for free!</p>
 			</div>
 
 		</footer>
