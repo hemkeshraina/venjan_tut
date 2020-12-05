@@ -76,14 +76,15 @@
 				var email = 
 					document.forms["RegForm"]["EMail"]; 
 					
+					var resume = 
+					document.forms["RegForm"]["resume"]; 
+					
 				var len = document.querySelectorAll('.checkbox input[type="checkbox"]:checked').length					
 				var len2 = document.querySelectorAll('.checkbox2 input[type="checkbox"]:checked').length					
 
 
 				var phone = 
 					document.forms["RegForm"]["Telephone"]; 
-				var what = 
-					document.forms["RegForm"]["Subject"]; 
 				
 				var address = 
 					document.forms["RegForm"]["Address"]; 
@@ -117,7 +118,7 @@
 				  }	
 				
 				if (len2 <= 0) {
-					window.alert("Please check at least one option"); 
+					window.alert("Please check at least one option for your suitable timings"); 
 
 				  }					  
 				if (!(occupation[0].checked || occupation[1].checked || occupation[2].checked || occupation[3].checked || occupation[4].checked)) {
@@ -128,18 +129,20 @@
 				
 				if (phone.value == "") { 
 					window.alert( 
-					"Please enter your Phone  number."); 
+					"Please enter your Phone  number"); 
 					phone.focus(); 
 					return false; 
 				} 
 
-
-
-				if (what.selectedIndex < 1) { 
-					alert("Please select your course"); 
-					what.focus(); 
+				if (resume.value == "") { 
+					window.alert( 
+					"Please enter your Resume link"); 
+					resume.focus(); 
 					return false; 
 				} 
+
+		
+				
 
 				return true; 
 			} 
@@ -150,8 +153,8 @@
 
 	<body> 
 	<div id="formstyle">
-		<h1 style="text-align: center;">Application For Teaching social Science</h1> 
-		<form id="rform" name="RegForm" action="login.html"
+		<h1 style="text-align: center;">Application For Teaching Social Science</h1> 
+		<form id="rform" name="RegForm" action="applyhindi_form.php"
 			onsubmit="return register()" method="post"> 
 			<p>Name: <input type="text"
 							size="65" name="Name" /></p> 
@@ -176,7 +179,7 @@
 			
 			<div style="width:300px">
 			<p>Highest Qualification:</p>
-			  <select required>
+			  <select required name="hqual">
 				<option value="">Choose...</option>
 				<option value="B.A"> B.A </option>
 				<option value="M.A"> M.A </option>
@@ -214,7 +217,7 @@
 			<p>Years of experience in Teaching</p>	
 			
 		<div style="width:300px">			
-			<select required>
+			<select required name="tExp">
 				<option value="">Choose...</option>
 				<option value="Less than a year"> Less than a year </option>
 				<option value="Less Two years"> Less Two years </option>
@@ -227,11 +230,11 @@
 		<div class="checkbox">
 		<p>Types of Boards you can handle</p>
 			<p >J & K Board
-			  <input type="checkbox">
+			  <input type="checkbox" name="boards" value="J & K Board">
 			</p>
 
 			<p >CBSE Board
-			  <input type="checkbox">
+			  <input type="checkbox" name="boards" value="CBSE Board">
 		</p>
 
 		</div>
@@ -239,66 +242,63 @@
 		<div class="checkbox2">
 			
 			<p>Available Timings</p>
-			<p >8-9 AM
-			  <input type="checkbox">
-			</p>
-
-			<p >9-10 AM
-			  <input type="checkbox">
-			</p>		
-			<p >10-11 AM
-			  <input type="checkbox">
-			</p>
-
-			<p >11-12 AM
-			  <input type="checkbox">
-		</p>
-			<p >12-1 AM
-			  <input type="checkbox">
-			</p>
-
-			<p >1-2 AM
-			  <input type="checkbox">
-		</p>
-			<p >2-3 AM
-			  <input type="checkbox">
-			</p>
-
-			<p >3-4 AM
-			  <input type="checkbox">
-			</p>		
-			<p >4-5 AM
-			  <input type="checkbox">
-			</p>
-
-			<p >5-6 AM
-			  <input type="checkbox">
-		</p>
-			<p >6-7 AM
-			  <input type="checkbox">
-			</p>
-
-			<p >7-8 AM
-			  <input type="checkbox">
-		</p>		
-
-			<p >8-9 AM
-			  <input type="checkbox">
-			</p>
-
-			<p >Full Time
-			  <input type="checkbox">
+							     
+			<p >8-9 AM                             
+			  <input type="checkbox" name="timings" value="8-9 AM" >
+			</p>		                            
+			<p >10-11 AM                            
+			  <input type="checkbox" name="timings" value="10-11 AM" >
+			</p>                                    
+												    
+			<p >11-12 AM                            
+			  <input type="checkbox" name="timings" value="11-12 AM" >
+		</p>                                        
+			<p >12-1 AM                             
+			  <input type="checkbox" name="timings" value="12-1 AM" >
+			</p>                                     
+												     
+			<p >1-2 AM                               
+			  <input type="checkbox" name="timings" value="1-2 AM " >
+		</p>                                        
+			<p >2-3 AM                              
+			  <input type="checkbox" name="timings" value="2-3 AM " >
+			</p>                                    
+												    
+			<p >3-4 AM                              
+			  <input type="checkbox" name="timings" value="3-4 AM" >
+			</p>		                             
+			<p >4-5 AM                               
+			  <input type="checkbox" name="timings" value="4-5 AM " >
+			</p>                                     
+												     
+			<p >5-6 AM                               
+			  <input type="checkbox" name="timings" value="5-6 AM" >
+		</p>                                         
+			<p >6-7 AM                               
+			  <input type="checkbox" name="timings" value="6-7 AM" >
+			</p>                                     
+												     
+			<p >7-8 AM                               
+			  <input type="checkbox" name="timings" value="7-8 AM " >
+		</p>		                                 
+												     
+			<p >8-9 AM                               
+			  <input type="checkbox" name="timings" value="8-9 AM" >
+			</p>                                     
+												     
+			<p >Full Time                            
+			  <input type="checkbox" name="timings" value="Full Time " >
 		</p>				
 		</div>
 			
 		<br>
 			
 			<p id= "Gender"> Current Occupation: <br>
-			<input type="radio" name="occupation" value="male"> Freelancer<br>
-			<input type="radio" name="occupation" value="female"> College Student<br>
-			<input type="radio" name="occupation" value="other"> Full-Time Teacher <br>
-			<input type="radio" name="occupation" value="male"> Not Working<br>
-			<input type="radio" name="occupation" value="female"> Other<br>
+			<input type="radio" name="occupation" value="Freelancer"> Freelancer<br>
+			<input type="radio" name="occupation" value="College Student"> College Student<br>
+			<input type="radio" name="occupation" value="Full-Time Teacher"> Full-Time Teacher <br>
+			<input type="radio" name="occupation" value="Not Working"> Not Working<br>
+			<input type="radio" name="occupation" value="Other"> Other<br>
 			</p>
 			<br />			
 			
@@ -310,7 +310,8 @@
 			
 			<br>
 			
-			<p>Upload your Resume  <input type="file"  name="file" required></p>
+			<p>Upload your Resume in your Google Drive and drop its active link below:  <input type="text" name="resume" >
+			</p>
 			
 			<br>
 			<p>How did you come to know about Venjan Tutorials: <textarea cols="55"
